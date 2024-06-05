@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .basic{
+
+        }
+        /* 为了确保 span 内的 a 元素继承父级 span 元素的宽度和高度，你可以将 a 元素转换为块级元素或内联块级元素。 */
+        .basic a{
+            display: block; /* 将 a 标签设为块级元素 */
+            width: 100%; /* 确保其占据父级 span 的全部宽度 */
+            height: 100%; /* 确保其占据父级 span 的全部高度 */
+            text-decoration: none; /* 移除链接的下划线 */
+            color: inherit; /* 确保文字颜色继承父元素 */
+        }
+        .nav1{
+            background-image: url(./images/bg1.png);
+        }
+        .nav2{
+            background-image: url(./images/bg2.png);
+        }
+        .nav3{
+            background-image: url(./images/bg3.png);
+        }
+        .nav4{
+            background-image: url(./images/bg4.png);
+        }
+        .nav1:hover{
+            background-image: url(./images/bg5.png);
+        }
+        .nav2:hover{
+            background-image: url(./images/bg6.png);
+        }
+        .nav3:hover{
+            background-image: url(./images/bg7.png);
+        }
+        .nav4:hover{
+            background-image: url(./images/bg8.png);
+        }
+    </style>
+</head>
+<body>
+    <span class="basic"><a href="" class="nav1">Nav1</a></span>
+    <span class="basic"><a href="" class="nav2">Nav2</a></span>
+    <span class="basic"><a href="" class="nav3">Nav3</a></span>
+    <span class="basic"><a href="" class="nav4">Nav4</a></span>
+</body>
+</html>
